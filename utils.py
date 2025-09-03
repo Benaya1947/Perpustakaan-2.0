@@ -7,7 +7,7 @@ def clear_screen():
 def pause():
     input("\nTekan Enter untuk melanjutkan...")
 
-def load_json(path, default):
+def load_json(path, default=None):
     try:
         with open(path, "r", encoding="utf-8") as f:
             return json.load(f)
